@@ -30,13 +30,12 @@ const requestHandler = (req, res) => {
           return res.end();
         });
       });
-    }
+    } 
     res.setHeader("Content-Type", "text/html");
     res.write("<html>");
     res.write("<head><title>Post Message</title></head>");
     res.write("<body><h1>Message Received</h1></body>");
     res.write("</html>");
-  
     return res.end();
 }
 module.exports = {requestHandler};
